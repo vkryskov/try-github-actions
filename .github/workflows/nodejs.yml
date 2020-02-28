@@ -11,6 +11,7 @@ jobs:
       - name: Hello world
         run: echo 'Hello World'
       - name: Install dependencies
-        run: npm install
-        working-directory: ./source
+        run: |
+          npm install
+          npm run lint
         
