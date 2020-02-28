@@ -13,4 +13,3 @@ jobs:
       - name: Install dependencies
       - run: npm install
       - run: npm lint
-      - working-directory: ./source/client
