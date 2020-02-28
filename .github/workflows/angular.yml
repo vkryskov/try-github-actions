@@ -19,3 +19,7 @@ jobs:
       - name: Lint
         run: npm run lint
         working-directory: ./source/client/angular
+        
+      - name: Test
+        run: npm run test
+        working-directory: ./source/client/angular
