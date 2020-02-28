@@ -1,14 +1,12 @@
 name: Node.js CI
 
 on: 
-  pull_request:
-    branches: 
-      - master
-      - releases/*
+  [push]
 
 jobs:
   lint:
+    name: Run linting
     runs-on: ubuntu-latest
     steps:
-      - run: npm install
-      - run: npm lint
+      - name: Hello world
+        run: echo 'Hello actions'
