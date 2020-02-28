@@ -15,7 +15,7 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-        working-directory: ../source/client/angular
+        working-directory: ./source/client/angular
       - name: Lint
         run: npm run lint
-        working-directory: ../source/client/angular
+        working-directory: ./source/client/angular
