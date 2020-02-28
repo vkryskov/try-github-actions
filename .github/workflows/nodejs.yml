@@ -7,9 +7,13 @@ jobs:
     name: Run linting
     runs-on: ubuntu-latest
     steps:
+      - name: Check out Git repository	
+        uses: actions/checkout@v2
+      
       - name: Install dependencies
         run: npm install
         working-directory: ./source/client/angular
+      
       - name: Lint
         run: npm run lint
         working-directory: ./source/client/angular
