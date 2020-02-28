@@ -10,7 +10,7 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
-    - working-directory: ./source/client
-    - run: npm install
-    - run: npm lint
-    
+      - name: Install dependencies
+      - run: npm install
+      - run: npm lint
+      - working-directory: ./source/client
